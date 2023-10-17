@@ -1,0 +1,15 @@
+\begin{table}[h]
+    \begin{center}
+    \begin{tabular}{lcc}
+    \hline \multirow{2}{*}{ Stage } & \multicolumn{2}{c}{ Runtime (ms) } \\
+    \cline { 2 - 3 } & LoFTR & \hspace{1cm} Ours \\
+    \hline Local Feature CNN \hspace{1cm} &  28.85 & \hspace{1cm} 28.85 \\
+    Attention Module & 23.10 & \hspace{1cm}46.99 \\
+    Matching & 37.20 & \hspace{1cm}37.12 \\
+    Total & 89.15 & \hspace{1cm}112.96 \\
+    \hline
+    \end{tabular}
+    \caption{Comparison of runtime speed on 640 $\times$ 480 images.}
+    \label{tab:timing_our}
+    \end{center}
+\end{table}

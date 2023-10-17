@@ -1,0 +1,21 @@
+\begin{table}[ht]
+    \resizebox{\linewidth}{!}{%
+    \begin{tabular}{llccc}
+    \hline \multirow{1}{*}{$\begin{array}{c}\text {\textbf{Method}}\end{array}$} & \multicolumn{1}{c}{ \textbf{DUC1 \hspace{2cm} DUC2} } \\ 
+    \cline { 2 - 2 } \T & {$\left(0.25 \mathrm{~m}, 10^{\circ}\right) /\left(0.5 \mathrm{~m}, 10^{\circ}\right) /\left(1.0 \mathrm{~m}, 10^{\circ}\right)$} \\
+    \hline
+    
+    ISRF  & 39.4 / 58.1 / 70.2 \hspace{1.1cm} 41.2 / 61.1 / 69.5 \\
+    KAPTURE + R2D2  & 41.4 / 60.1 / 73.7 \hspace{1.1cm} 47.3 / 67.2 / 73.3 \\ 
+    KAPTURE + R2D2 & 41.4 / 60.1 / 73.7 \hspace{1.1cm} 47.3 / 67.2 / 73.3 \\ 
+    HLoc + LoFTR & 47.5 / 72.2 / 84.8  \hspace{1.1cm} 54.2 / 74.8 / \textbf{85.5}  \\
+    
+    HLoc + SP + SuperGlue & 49.0 / 68.7 / 80.8 \hspace{1.1cm} 53.4 / \textbf{77.1} / 82.4 \\
+    
+    HLoc + ASpanFormer & 51.7 / 74.1 / 87.1  \hspace{1.1cm} 55.8 / 75.7 / 82.5  \\
+    HLoc + Ours & \textbf{51.8} / \textbf{73.9} / \textbf{87.8}  \hspace{0.83cm} \textbf{56.0} / 75.8 / 83.1  \\
+    \hline
+    \end{tabular}}
+    \caption{Visual localization evaluation on the InLoc \citep{taira2018inloc} benchmark.}
+    \label{tab:inloc}
+\end{table}

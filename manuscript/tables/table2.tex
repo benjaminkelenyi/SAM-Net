@@ -1,0 +1,27 @@
+\begin{table}[h]
+    \resizebox{\linewidth}{!}{%
+    \begin{tabular}{clccc}
+    \hline \multirow{2}{*}{$\begin{array}{c}\text { \textbf{Local} } \\
+    \text { \textbf{features} }\end{array}$} & \multicolumn{1}{c}{\textbf{Matcher} } & \multicolumn{3}{c}{ \textbf{Pose estimation AUC} } \\ 
+    \cline { 3 - 5 } \T & & $@ 5^{\circ}$ & $@ 10^{\circ}$ & $@ 20^{\circ}$ \\
+    \hline \multirow{3}{*}[-1.1em]{ SuperPoint} & \vspace{0.05cm}  \textbf{Detector-based Methods} & & \\
+    
+    \hline & SuperGlue \citep{sarlin2020superglue} & 42.18 & 61.16 & 75.96 \\
+    & DenseGAP \citep{kuang2022densegap} & 41.17 & 56.87 & 70.22 \\
+    & ClusterGNN \citep{shi2022clustergnn} & 44.19 & 58.54 & 70.33 \\
+    \hline
+    \hline \multirow{1}{*} \centering  \vspace{0.05cm} & \textbf{Detector-free Methods} \\
+    
+    \hline & DRC-Net \citep{li2020dual} & 27.01 & 42.96 & 58.31 \\
+    & Patch2Pix \citep{zhou2021patch2pix} & 41.40 & 56.32 & 68.31 \\
+    & LoFTR \citep{sun2021loftr} & 52.80 & 69.19 & 81.18 \\
+    \xdash & TopicFM \citep{giang2022topicfm} & 54.10 & 70.10 & 81.60 \\
+    & QuadTree \citep{tang2022quadtree} & 54.60 & 70.50 & 82.20 \\
+    & MatchFormer \citep{wang2022matchformer} & 52.91 & 69.74 & 82.00 \\
+    & ASpanFormer \citep{chen2022aspanformer} & 55.30 & 71.50 & 83.10 \\
+    & \textbf{Ours} & \textbf{55.31} & \textbf{71.70} & \textbf{83.37} \\
+    \hline \hline
+    \end{tabular}}
+    \caption{The performance of two-view pose estimation on outdoor scenes in the MegaDepth dataset \citep{li2018megadepth} was evaluated. The results indicate the accuracy and effectiveness of the pose estimation algorithm in determining the relative camera positions in outdoor environments.}
+    \label{tab:outdoor}
+\end{table}

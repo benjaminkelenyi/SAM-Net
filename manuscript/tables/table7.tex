@@ -1,0 +1,14 @@
+\begin{table}[h]
+    \resizebox{\linewidth}{!}{%
+    \begin{tabular}{llccc}
+    \hline \multirow{2}{*}
+    & \multicolumn{1}{c}{\textbf{Feature maps} } & \multicolumn{2}{c}{ \textbf{Pose estimation AUC} } \\ 
+    \cline { 3 - 5 } \T & & $@ 5^{\circ}$ & $@ 10^{\circ}$ & $@ 20^{\circ}$ \\
+    \hline
+    & SAM-Net with 3 feature maps from PixLoc & 25.87 & 46.43 & 63.57 \\
+    & SAM-Net with last feature map from PixLoc & \textbf{26.01} & \textbf{46.44} & \textbf{63.61} \\
+    \hline \hline
+    \end{tabular}}
+    \caption{The evaluation of two-view pose estimation on outdoor scenes in the MegaDepth dataset \citep{dai2017scannet}. We compared our method, by using the last feature map from PixLoc \citep{sarlin2021back}, and the use of all 3 feature maps.}
+    \label{tab:fmaps}
+\end{table}

@@ -1,0 +1,39 @@
+\begin{table*}[h]
+    \begin{center}
+    \caption{A comprehensive table containing the most recent works in the field of feature matching.}\label{tab:comp_sotas}
+    \end{center}
+    \centering
+    \small
+    \begin{tabular}{ p{0.28\linewidth}|p{0.66\linewidth}}
+      \hline
+     \textbf{Paper (Author, Year)} & \textbf{Concept} \\
+     \hline
+     \hline
+    
+    DeepMatcher \citep{xie2023deepmatcher} & Introduces a Slimming Transformer approach for dense pixel-wise matching. SlimFormer is used to efficiently model relevance among all keypoints and achieve long-term context aggregation. \\
+    
+    HTMatch \citep{cai2023htmatch} & A hybrid transformer-based Graph Neural Network is used for local feature matching. It combines self- and cross-attention to condition feature descriptors in image pairs. \\
+    
+    LifeGlue \citep{lindenberger2023lightglue} & This framework uses introspection to determine whether further computation is necessary in addition to predicting correspondences after each computational block. \\
+    
+    ASpanFormer \citep{chen2022aspanformer} & A novel attention operation to adjust attention span in a self-adaptive manner. It regresses flow maps to identify the search region, generates an adaptive sampling grid, and computes attention across two images in derived regions. \\
+    
+    ClusterGNN \citep{shi2022clustergnn} & Is addressed using an attentional Graph Neural Network (GNN) architecture. It dynamically divides keypoints into distinct subgraphs using a progressive clustering module, reducing unnecessary connections. \\
+    
+    DAN-SuperPoint \citep{li2022dan} & The paper presents a network that uses a feature pyramid structure for \emph{multi-scale feature fusion}, followed by a position and channel attention module to obtain the feature dependency relationship of the spatial and channel dimensions. \\
+     
+    DenseGAP \citep{kuang2022densegap} & Uses a graph structure and anchor points to provide reliable prior information for context modeling. \\
+    
+    MatchFormer \citep{wang2022matchformer} & Incorporates self- and cross-attention on multi-scale features in a hierarchical structure that improves matching robustness, especially in challenging indoor scenes or with limited outdoor training data. \\
+     
+    TopicFM \citep{giang2022topicfm} & Improves matching robustness by encoding high-level contexts in images using topic modeling and probabilistic feature matching. \\
+    
+    LoFTR \citep{sun2021loftr} & To improve cross-view features, a combination of self and cross attention blocks is used. LoFTR replaces global full attention with the Linear Transformer \citep{tang2022quadtree} to make computations more manageable. \\
+    
+    Patch2Pix \citep{zhou2021patch2pix} & The proposed architecture extracts features from a correspondence network using an adapted ResNet34 backbone. Patch2Pix then refines the proposals at image resolution by employing two levels of regressors with the same architecture. \\
+    
+    DRC-Net \citep{li2020dual} & It extracts both coarse- and fine-resolution feature maps. It works in two steps, first generating coarse maps and then refining them with the agreement module. \\
+    
+    \hline
+    \end{tabular}
+\end{table*}

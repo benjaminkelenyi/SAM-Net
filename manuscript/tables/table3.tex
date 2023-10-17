@@ -1,0 +1,27 @@
+\begin{table}[h]
+    \resizebox{\linewidth}{!}{%
+    \begin{tabular}{clccc}
+    \hline \multirow{2}{*}{$\begin{array}{c}\text { \textbf{Local} } \\
+    \text { \textbf{features} }\end{array}$} & \multicolumn{1}{c}{\textbf{Matcher} } & \multicolumn{3}{c}{ \textbf{Pose estimation AUC} } \\ 
+    \cline { 3 - 5 } \T & & $@ 5^{\circ}$ & $@ 10^{\circ}$ & $@ 20^{\circ}$ \\
+    \hline \multirow{3}{*}[-5em]{ SuperPoint } & \vspace{0.05cm}  \textbf{Detector-based Methods} & & \\
+    \hline D2-Net & NN & 5.25 & 14.53 & 27.96 \\
+    ContextDesc & ratio test \citep{lowe2004distinctive} & 6.64 & 15.01 & 25.75 \\
+    & NN & 9.43 & 21.53 & 36.40 \\
+    & NN + OANet \citep{zhang2019learning} & 11.76 & 26.90 & 43.85 \\
+    & SuperGlue \citep{sarlin2020superglue} & 16.16 & 33.81 & 51.84 \\
+    & SGMNet \citep{chen2021learning} & 15.40 & 32.06 & 48.32 \\
+    & DenseGAP \citep{kuang2022densegap} & 17.01 & 36.07 & 55.66 \\
+    & HTMatch \citep{cai2023htmatch} & 15.11 & 31.42 & 48.23 \\
+    \hline
+    \hline & \vspace{0.05cm} \textbf{Detector-free Methods} & & \\
+    \hline & LoFTR \citep{sun2021loftr} & 22.06 & 40.80 & 57.62 \\
+    & QuadTree \citep{tang2022quadtree} & 24.90 & 44.70 & 61.80 \\
+    \xdash & MatchFormer \citep{wang2022matchformer} & 24.31 & 43.90 & 61.41 \\
+    & ASpanFormer \citep{chen2022aspanformer} & 25.60 & 46.00 & 63.30 \\
+    & \textbf{Ours} & \textbf{26.01} & \textbf{46.44} & \textbf{63.61} \\
+    \hline \hline
+    \end{tabular}}
+    \caption{The performance of two-view pose estimation on indoor scenes in the  ScanNet dataset \citep{dai2017scannet} was evaluated. The results indicate the accuracy and effectiveness of the pose estimation algorithm in determining the relative camera positions in outdoor environments.}
+    \label{tab:indoor}
+\end{table}
