@@ -10,7 +10,7 @@ cd $PROJECT_DIR
 data_cfg_path="configs/data/megadepth_test_1500.py"
 main_cfg_path="configs/aspan/outdoor/aspan_test.py"
 # ckpt_path="/home/benji/projects/ml-samnet/logs/tb_logs/outdoor-ds-aspan-832-bs=4/version_1/checkpoints/last.ckpt"
-ckpt_path="/home/benji/projects/ml-samnet/weights/weights/outdoor.ckpt"
+ckpt_path="weights/weights/outdoor.ckpt"
 dump_dir="dump/outdoor_dump"
 profiler_name="inference"
 n_nodes=1  # mannually keep this the same with --nodes

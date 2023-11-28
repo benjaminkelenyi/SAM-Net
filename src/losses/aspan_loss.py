@@ -3,12 +3,8 @@ from loguru import logger
 import torch
 import torch.nn as nn
 
-# workaround: not the best solution...
-import sys
-sys.path.insert(1, '/home/benji/projects/ml-samnet/pixloc')
-
-from pixloc.localization.feature_extractor import FeatureExtractor
-from pixloc.pixlib.utils.experiments import load_experiment
+from pixloc.pixloc.localization.feature_extractor import FeatureExtractor
+from pixloc.pixloc.pixlib.utils.experiments import load_experiment
 
 
 class ASpanLoss(nn.Module):
@@ -264,8 +260,8 @@ class ASpanLoss(nn.Module):
         
         loss+=loss_flow.sum()
 
-        # # 4. kd losssc
-        # loss = self.compute_kd_loss(loss, data, desc1, desc2, loss_scalars)
+        # 4. kd loss
+        loss = self.compute_kd_loss(loss, data, desc1, desc2, loss_scalars)
 
         #print((loss_c * self.loss_config['coarse_weight']).data,loss_flow.data)
         loss_scalars.update({'loss': loss.clone().detach().cpu()})
