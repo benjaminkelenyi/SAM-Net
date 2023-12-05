@@ -60,4 +60,11 @@ cd scripts/reproduce_train
 bash outdoor.sh
 ```
 
+## Useful data:
+The extra files that you need to run SAM-Net can be found [here](https://drive.google.com/drive/folders/1SyWAScRUpcC32LSTZcku16ZHMfMctymR?usp=drive_link).
+* dump
+* data
+* pixloc
+* assets
+
 
