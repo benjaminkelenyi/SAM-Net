@@ -3,7 +3,7 @@
 SCRIPTPATH=$(dirname $(readlink -f "$0"))
 PROJECT_DIR="${SCRIPTPATH}/../../"
 
-# conda activate loftr
+conda activate samnet
 export PYTHONPATH=$PROJECT_DIR:$PYTHONPATH
 cd $PROJECT_DIR
 
