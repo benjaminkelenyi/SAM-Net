@@ -19,8 +19,8 @@ conda activate samnet
 A demo to match one image pair is provided. To get a quick start, 
 
 ```bash
-cd demo
-python demo.py
+Indoor: ./scripts/reproduce_test/indoor.sh
+Outdoor: ./scripts/reproduce_test/outdoor.sh
 ```
 
 
